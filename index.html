@@ -1,1 +1,21 @@
-<h1>Hello World</h1>
+---
+scenes:
+  - aboutme
+  - ci
+  - puppet
+  - applications
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include sidebar.html %}
+    {% include welcome.html %}
+    <div id="scenes">
+      {% for scene in page.scenes %}
+        {% include scenes/{{scene}}.html %}
+      {% endfor %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

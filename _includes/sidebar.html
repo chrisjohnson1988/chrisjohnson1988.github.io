@@ -1,0 +1,7 @@
+<div id="sidebar">
+  {% for scene in page.scenes %}
+    <div id="sidebar-{{scene}}" class="container">
+    {% include sidebar/{{scene}}.html %}
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,15 @@
+div.cards {
+  position: relative;
+  margin:   4em;
+  height: 400px;
+}
+div.card {
+  color:    white;
+  height:   100px;
+  width:    100px;
+  position: absolute;
+  &.vagrant { top: 10px; left: 0; }
+  &.terraform { top: 100px; left: 150px; }
+  &.puppet { top: 50px; left: 400px; }
+  &.packer { top: 70px; left: 70px;}
+}

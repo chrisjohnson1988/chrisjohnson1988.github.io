@@ -1,0 +1,39 @@
+#ci {
+  #devices { position: relative; margin: 5em 0 10em;}
+  .htc, .pc, .mac, .iphone, .ipad { 
+    position: relative; 
+    img { width: 100%; }
+    video { position: absolute; }
+  }
+  .htc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6%;
+    video { top: 9%; left: 7%; width: 85%; }
+  }
+  .pc {
+    width: 50%;
+    float: left;
+    video { top: 6%; left: 4%; width: 72%; }
+  }
+  .mac {
+    width: 40%;
+    float: right;
+    video { top: 6%; left: 4%; width: 92%; }
+  }
+  .iphone {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 9%;
+    video { top: 15%; left: 6%; width: 88%; }
+  }
+  .ipad {
+    position: absolute;
+    bottom:   0;
+    right:    31%;
+    width:    17%;
+    video { width: 87%; left: 7%; top: 9%;}
+  }
+}

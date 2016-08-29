@@ -1,0 +1,13 @@
+<div class="fullscreen" id="puppet">
+  <div class="container">
+    {% capture my_include %}{% include text/puppet.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+
+    <div class="cards">
+      <div class="card vagrant"><img src="/images/logos/vagrant.png" height="90"/></div>
+      <div class="card terraform"><img src="/images/logos/terraform.png" height="90"/></div>
+      <div class="card puppet"><img src="/images/logos/puppet.png" height="70"/></div>
+      <div class="card packer"><img src="/images/logos/packer.png" height="70"/></div>
+    </div>
+  </div>
+</div>

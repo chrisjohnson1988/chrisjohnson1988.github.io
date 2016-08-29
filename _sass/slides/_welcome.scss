@@ -1,0 +1,64 @@
+@import "responsive_font";
+
+#welcome {
+  position:     relative;
+  height:       200vh;
+  //background:   radial-gradient(#000, #333);
+  $image_width: 130px/2;
+
+  div.background {
+    position: fixed;
+    top:      0;
+    left:     0;
+    bottom:   0;
+    right:    0;
+    margin:   0;
+    opacity:  0.5;
+    .layer-1, .layer-2, .layer-3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right:0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:100vh;
+    }
+    .layer-1 { background-image: url('../images/circuit/layer1.svg'); }
+    .layer-2 { background-image: url('../images/circuit/layer2.svg'); }
+    .layer-3 { background-image: url('../images/circuit/layer3.svg'); }
+  }
+  img.face {
+    $border: 6px;
+    $full_width: $image_width + $border;
+
+    opacity:       0;
+    border-radius: 50%;
+    position:      fixed;
+    top:           50%;
+    left:          50%;
+    margin:        -$full_width 0 0 (-$full_width);
+    border:        $border solid white;
+  }
+  
+  div.name {
+    @include responsive-font(11vw, 20px, 50px);
+    color:            white;
+    background-color: rgba(0,0,0, 0.8);
+    position:         fixed;
+    top:              50%;
+    width:            100%;
+    text-align:       center;
+    margin-top:       $image_width + 20px;
+  }
+
+  i.scrolldown {
+    $scrollWidth: 50px;
+
+    font-size:   $scrollWidth;
+    position:    fixed;
+    bottom:      10%;
+    left:        50%;
+    margin-left: -$scrollWidth/2;
+  }
+}

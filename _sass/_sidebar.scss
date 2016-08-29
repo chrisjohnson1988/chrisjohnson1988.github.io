@@ -1,0 +1,25 @@
+
+#sidebar {
+  display: none;
+  width: 30%;
+  h1 {font-size: 20px;}
+  h2 {font-size: 18px;}
+  font-size: 12px;
+  a {color: $textColor; font-weight: bold; }
+  &, & > * {
+    position:         fixed;
+    background-color: $darkBlue;
+    right:            0;
+    top:              0;
+    bottom:           0;
+    opacity:          0;
+    color:            black;
+  }
+
+  > * { display:none; width: 100%; overflow: auto;}
+}
+
+@media screen and (min-width: 768px) {
+  #scenes p { width:70%; }
+  #sidebar { display:block; }
+}

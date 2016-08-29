@@ -23,5 +23,6 @@ define [
       .to('.layer-2', 0.5, {css:{z:0}}, '-=1')
       .to('.layer-3', 0.5, {css:{z:100}}, '-=1')
       .fromTo('.face, .name', 1, {opacity:1}, {opacity:0}, '-=1')
-      .to('#welcome', 0.5, {opacity: 0, visibility: 'hidden'}, '-=0.5')
+      .to('#welcome', 0.5, {opacity: 0}, '-=0.5')
       .fromTo('#sidebar', 0.5, {opacity: 0, x:100}, {opacity: 1, x:0}, '-=0.3')
+      .set('#welcome', {visibility: 'hidden'})

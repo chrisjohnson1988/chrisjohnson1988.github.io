@@ -29,4 +29,4 @@ define [], -> class AbstractScene
   
   getTween: ->
     new TimelineMax()
-      .staggerFromTo(@$('li,p:not(:has(img))'), 2, {scale: 0, opacity: 0}, {scale:1, opacity:1, ease:Elastic.easeOut, force3D:true}, 0.2, '=-1')
+      .staggerFromTo(@$('li,p:not(:has(img))'), 2, {opacity: 0}, {opacity:1}, 0.2, '=-1')

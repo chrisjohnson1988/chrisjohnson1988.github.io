@@ -20,6 +20,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  .fullscreen { min-height: 100vh; }
   #scenes p { width:70%; }
   #sidebar { display:block; }
 }

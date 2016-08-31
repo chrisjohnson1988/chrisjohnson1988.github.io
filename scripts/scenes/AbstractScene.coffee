@@ -1,9 +1,8 @@
 define [], -> class AbstractScene
 
-  bodyHook:     'onEnter'
-  bodyDuration: 0
-  bodyDuration: 0
-  sideBarHook: 'onCenter'
+  bodyHook:       'onEnter'
+  bodyDuration:    0
+  sideBarHook:    'onCenter'
   sideBarDuration: 0
 
   $: (selector) -> $(selector, @id)

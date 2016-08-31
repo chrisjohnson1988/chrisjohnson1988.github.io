@@ -14,7 +14,7 @@ define [
    
     TweenLite.set('.background *', {css:{transformPerspective:400, transformStyle:"preserve-3d"}})
     TweenLite.set('.background', {css:{transformPerspective:400, transformStyle:"preserve-3d"}})
-    TweenMax.to(@$('.scrolldown'), 2, {y:30, repeat:-1, yoyo:true, ease:Elastic.easeIn.config(1, 0.3)})
+    TweenMax.to(@$('.scrolldown'), 2, {y:10, repeat:-1, yoyo:true, ease:Elastic.easeIn.config(1, 0.3)})
 
   getTween: -> 
     new TimelineMax()

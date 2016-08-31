@@ -29,3 +29,8 @@ define [], -> class AbstractScene
   getTween: ->
     new TimelineMax()
       .staggerFromTo(@$('li,p:not(:has(img))'), 2, {opacity: 0}, {opacity:1}, 0.2, '=-1')
+
+  ###
+  Returns the current height of the scene
+  ###
+  getHeight: -> $(@id).height()

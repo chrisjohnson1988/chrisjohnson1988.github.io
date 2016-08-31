@@ -47,7 +47,10 @@ define [
   handleResize: ->
     if 60 < Math.abs @height - $(window).height()
       do @updateHeight
+      origHeight = @getHeight()
       do @fixHeight
+      $(window).scrollTop $(window).scrollTop() - origHeight + @getHeight()
+
   ###
   Some mobile devices (at least on my Android), the address bar comes in and
   out of display causing the welcome page to resize (as it is 200vh). This

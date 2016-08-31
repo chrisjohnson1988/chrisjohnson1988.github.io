@@ -38,12 +38,12 @@ define [
   updateHeight: -> @height = $(window).height()
 
   ###
-  Resize handler, if the height difference is greater than 50 pixels, handle
-  the recalculation of the height. 50 pixels have been chosen as it is
+  Resize handler, if the height difference is greater than 60 pixels, handle
+  the recalculation of the height. 60 pixels have been chosen as it is
   greater than the address bar pixel height.
   ###
   handleResize: ->
-    if 50 < Math.abs @height - $(window).height()
+    if 60 < Math.abs @height - $(window).height()
       do @updateHeight
       do @fixHeight
   ###

@@ -1,8 +1,8 @@
 #devices { 
   position: relative; 
   margin:   4em 0; 
-  width:    100%;
-  
+  width:    100%      !important;
+
   .htc, .pc, .mac, .iphone, .ipad { 
     position: relative; 
     img { width: 100%; }

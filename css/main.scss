@@ -10,10 +10,10 @@ $darkBlue:        #00cccc;
 $darkerBlue:      #00aaaa;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+@import "sidebar";
 @import "slides/welcome";
 @import "slides/puppet";
 @import "slides/ci";
-@import "sidebar";
 
 body, html {
   background:  $backgroundColor;
@@ -33,7 +33,8 @@ a {
 
 p img {
   display:   block;
-  max-width: 500px;
+  max-width: 100%;
+  width:     500px;
   border:    solid 1px $textColor;
   margin:    2em auto; // Centre images
 }

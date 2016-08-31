@@ -1,12 +1,14 @@
-<div class="container" id="ci">
-  {% capture my_include %}{% include text/ci.md %}{% endcapture %}
-  {{ my_include | markdownify }}
+<div class="fullscreen" id="ci">
+  <div class="container">
+    {% capture my_include %}{% include text/ci.md %}{% endcapture %}
+    {{ my_include | markdownify }}
 
-  <div id="devices" class="clearfix">
-    <div class="pc">{%     include ci_device.html name="pc"     %}</div>
-    <div class="mac">{%    include ci_device.html name="mac"    %}</div>
-    <div class="iphone">{% include ci_device.html name="iphone" %}</div>
-    <div class="htc">{%    include ci_device.html name="htc"    %}</div>
-    <div class="ipad">{%   include ci_device.html name="ipad"   %}</div>
+    <div id="devices" class="clearfix">
+      <div class="pc">{%     include ci_device.html name="pc"     %}</div>
+      <div class="mac">{%    include ci_device.html name="mac"    %}</div>
+      <div class="iphone">{% include ci_device.html name="iphone" %}</div>
+      <div class="htc">{%    include ci_device.html name="htc"    %}</div>
+      <div class="ipad">{%   include ci_device.html name="ipad"   %}</div>
+    </div>
   </div>
 </div>

@@ -1,5 +1,8 @@
-#ci {
-  #devices { position: relative; margin: 5em 0 10em;}
+#devices { 
+  position: relative; 
+  margin:   4em 0; 
+  width:    100%;
+  
   .htc, .pc, .mac, .iphone, .ipad { 
     position: relative; 
     img { width: 100%; }

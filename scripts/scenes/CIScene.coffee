@@ -6,8 +6,4 @@ define [
   sidebarEl:    '#sidebar-ci'
   bodyDuration: '150%'
 
-  getTween: -> 
-    super
-      .fromTo('.iphone', 5, {y: '300'}, {y: 0})
-      .fromTo('.htc',    5, {y: '200'}, {y:-10}, '-=5')
-      .fromTo('.ipad',   5, {y: '250'}, {y:-5},  '-=5')
+  getTween: -> super.from '.iphone, .htc, .ipad', 5, {y: 50}

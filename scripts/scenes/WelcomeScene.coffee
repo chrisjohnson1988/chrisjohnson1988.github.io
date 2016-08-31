@@ -20,6 +20,7 @@ define [
     do @fixHeight
     do @updateHeight
     $( window ).resize => do @handleResize
+    @$('a').click (e) => @scrollTo e.currentTarget.hash #Add listener to scroll to about me
 
   getTween: -> 
     new TimelineMax()
@@ -56,3 +57,9 @@ define [
   ###
   fixHeight: ->
     $(e).height($(e).height('').height()) for e in ['#welcome', '.background']
+
+  ###
+  Scroll to the specified target element
+  ###
+  scrollTo: (target) ->
+    $('html, body').animate scrollTop: $(target).offset().top, 1500

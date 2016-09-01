@@ -1,7 +1,12 @@
 <div id="sidebar">
-  {% for scene in page.scenes %}
-    <div id="sidebar-{{scene}}" class="container">
-    {% include sidebar/{{scene}}.html %}
+  {% for scene in site.scenes %}
+    <div id="sidebar-{{scene.title}}" class="container">
+
+      {% for sidebar in site.sidebar %}
+        {% if scene.sidebar == sidebar.title %}
+          {{sidebar}}
+        {% endif %}
+      {% endfor %}
     </div>
   {% endfor %}
 </div>

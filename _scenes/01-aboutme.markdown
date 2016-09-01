@@ -1,3 +1,8 @@
+---
+title:   aboutme
+layout:  fullscreen
+sidebar: education
+---
 # About me
 
 I am a highly skilled full stack developer working for the [Centre of Ecology and Hydrology][1] Lancaster.

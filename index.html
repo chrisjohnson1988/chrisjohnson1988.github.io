@@ -1,9 +1,4 @@
 ---
-scenes:
-  - aboutme
-  - ci
-  - puppet
-  - applications
 ---
 <!DOCTYPE html>
 <html>
@@ -12,8 +7,8 @@ scenes:
     {% include sidebar.html %}
     {% include welcome.html %}
     <div id="scenes">
-      {% for scene in page.scenes %}
-        {% include scenes/{{scene}}.html %}
+      {% for scene in site.scenes %}
+        {{scene}}
       {% endfor %}
     </div>
     {% include footer.html %}

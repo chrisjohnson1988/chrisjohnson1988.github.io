@@ -1,3 +1,8 @@
+---
+title:   puppet
+layout:  fullscreen
+sidebar: puppetmodules
+---
 # Code is King!
 
 I use code to manage infrastructure. Using code means that infrastructure can be quickly replicated, collaboratively evolved and easily understood.
@@ -14,3 +19,10 @@ Having written [many][2] [puppet][3] [modules][4], I am well practised in managi
 [4]: [https://github.com/NERC-CEH/puppet-fstab.git]  "puppet-fstab"
 [5]: [https://github.com/NERC-CEH/ubuntu.git]        "Ubuntu Packer"
 [6]: [https://github.com/NERC-CEH/ubuntu.git]        "Mac OSX Packer"
+
+<div class="cards" markdown="0">
+  <div class="card vagrant"><img src="/images/logos/vagrant.png" height="90"/></div>
+  <div class="card terraform"><img src="/images/logos/terraform.png" height="90"/></div>
+  <div class="card puppet"><img src="/images/logos/puppet.png" height="70"/></div>
+  <div class="card packer"><img src="/images/logos/packer.png" height="70"/></div>
+</div>

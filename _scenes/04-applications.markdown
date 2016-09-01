@@ -1,3 +1,7 @@
+---
+title:  applications
+layout: fullscreen
+---
 # Applications
 
 ## CEH Catalogue

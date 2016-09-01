@@ -9,7 +9,11 @@
 title:   Chris Johnson - Developer
 baseurl: ""
 url:     ""
-
+collections:
+  scenes:
+    output: false
+  sidebar:
+    output: false
 
 # Build settings
 markdown: kramdown

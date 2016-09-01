@@ -1,3 +1,6 @@
+---
+title: puppetmodules
+---
 # System Management Code
 
 ## Puppet Modules

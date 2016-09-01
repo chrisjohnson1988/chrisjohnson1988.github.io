@@ -1,3 +1,6 @@
+---
+title: education
+---
 # Education
 
 ## Lancaster University

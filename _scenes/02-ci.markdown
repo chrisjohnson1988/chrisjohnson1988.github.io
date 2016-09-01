@@ -1,0 +1,16 @@
+---
+title:   ci
+layout:  fullscreen
+sidebar: ci_details
+---
+# Testing
+ 
+I have built a web-application testing suite that consists of Android devices, Apple devices and a hub of different browser types. Any developer or system at CEH can use it 24/7 to verify the correct functioning of their applications and also hook it into their automated testing programmes.
+
+<div id="devices" class="clearfix" markdown="0">
+  <div class="pc">{%     include ci_device.html name="pc"     %}</div>
+  <div class="mac">{%    include ci_device.html name="mac"    %}</div>
+  <div class="iphone">{% include ci_device.html name="iphone" %}</div>
+  <div class="htc">{%    include ci_device.html name="htc"    %}</div>
+  <div class="ipad">{%   include ci_device.html name="ipad"   %}</div>
+</div>
